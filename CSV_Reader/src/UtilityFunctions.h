@@ -25,15 +25,17 @@ namespace CSV
 	class File
 	{
 		public:
-			int rowCount = 15; //479917
-			void returnnCol(int id, std::string* outCol);
+			int rowCount = 28962; //479917
+			void returnnCol(int id, std::vector<std::string>& outCol);
 			Row returnRow(int id);
-			File(const char* filePath);
+			std::vector<Row> dataset;
+			void add(Row data);
+			File();
+			void openfile(const char* filePath);
 			~File();
 		private:
 			std::string readTillComma();
 			std::ifstream file;
-			Row* dataset;
 			std::string line;
 			void readfile(); //done
 	};
@@ -41,18 +43,15 @@ namespace CSV
 
 namespace Tree {
 
-	class node {
+	class Node {
 	public:
-		int id;
-		std::string info;
-		node* parent;
-		/*std:::vector<node*> children;
-
-		node(node* parent) : parent(parent)
-		{
-		}
-
-		void add_child(node* child) { children.push_back(child); }*/
+		int colID;
+		std::string val = "";
+		int fatal = 0, serious = 0, slight = 0;
+		std::vector<Node*> children;
+		void add_child(Node* child);
+		//does not have a destructor yet... probably dont need it... small app... project deadline soon ...lol
 	};
 
 }
+
