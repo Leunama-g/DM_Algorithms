@@ -160,9 +160,6 @@
     <ProjectReference Include="..\Decision_Tree\Decision_Tree.vcxproj">
       <Project>{0ec9ae7c-b308-450d-b43c-5faca4909a86}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\KNN\KNN.vcxproj">
-      <Project>{70687987-c227-415e-ae16-3315f01b4f35}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

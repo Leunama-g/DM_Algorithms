@@ -5,11 +5,9 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Main_Interface", "Main_Interface\Main_Interface.vcxproj", "{515F032D-7499-4134-8713-AACB2EC00AED}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KNN", "KNN\KNN.vcxproj", "{70687987-C227-415E-AE16-3315F01B4F35}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Decision_Tree", "Decision_Tree\Decision_Tree.vcxproj", "{0EC9AE7C-B308-450D-B43C-5FACA4909A86}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSV_Reader", "CSV_Reader\CSV_Reader.vcxproj", "{92FA2BAB-A758-46BC-B6A7-DCE89EFA067E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UtilityFunctions", "CSV_Reader\CSV_Reader.vcxproj", "{92FA2BAB-A758-46BC-B6A7-DCE89EFA067E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,14 +25,6 @@ Global
 		{515F032D-7499-4134-8713-AACB2EC00AED}.Release|x64.Build.0 = Release|x64
 		{515F032D-7499-4134-8713-AACB2EC00AED}.Release|x86.ActiveCfg = Release|Win32
 		{515F032D-7499-4134-8713-AACB2EC00AED}.Release|x86.Build.0 = Release|Win32
-		{70687987-C227-415E-AE16-3315F01B4F35}.Debug|x64.ActiveCfg = Debug|x64
-		{70687987-C227-415E-AE16-3315F01B4F35}.Debug|x64.Build.0 = Debug|x64
-		{70687987-C227-415E-AE16-3315F01B4F35}.Debug|x86.ActiveCfg = Debug|Win32
-		{70687987-C227-415E-AE16-3315F01B4F35}.Debug|x86.Build.0 = Debug|Win32
-		{70687987-C227-415E-AE16-3315F01B4F35}.Release|x64.ActiveCfg = Release|x64
-		{70687987-C227-415E-AE16-3315F01B4F35}.Release|x64.Build.0 = Release|x64
-		{70687987-C227-415E-AE16-3315F01B4F35}.Release|x86.ActiveCfg = Release|Win32
-		{70687987-C227-415E-AE16-3315F01B4F35}.Release|x86.Build.0 = Release|Win32
 		{0EC9AE7C-B308-450D-B43C-5FACA4909A86}.Debug|x64.ActiveCfg = Debug|x64
 		{0EC9AE7C-B308-450D-B43C-5FACA4909A86}.Debug|x64.Build.0 = Debug|x64
 		{0EC9AE7C-B308-450D-B43C-5FACA4909A86}.Debug|x86.ActiveCfg = Debug|Win32

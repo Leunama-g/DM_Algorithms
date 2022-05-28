@@ -1,4 +1,3 @@
-#include "KNN.h"
 #include "DecisionTree.h"
 #include "UtilityFunctions.h"
 #include <iostream>
