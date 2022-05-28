@@ -92,6 +92,8 @@ int main() {
 	Tree::Node* root = new Tree::Node;
 
 	CSV::File trainingData;
+
+	//set up in needed
 	trainingData.openfile("C:/Users/ageta/Desktop/DM/Project/Training Data.csv");
 
 	model = ((float)clock() - start);
@@ -119,6 +121,7 @@ int main() {
 
 	CSV::File testingData;
 	testingData.rowCount = 43438;
+	//set up in needed
 	testingData.openfile("C:/Users/ageta/Desktop/DM/Project/Testing Data.csv");
 
 	DecisionTree::testModel(testingData, root);
@@ -151,84 +154,3 @@ int main() {
 
 
 
-/*
-	CSV::Row xtest;
-
-	xtest = test.returnRow(4);
-	cout << xtest.accidentSeverity << ", " << xtest.dayOfWeek << ", " << xtest.junctionDetail << ", " << xtest.speedLimit  << ", " << xtest.time << endl <<endl;
-
-	vector<string> ytest;
-	vector<DecisionTree::value> ss;
-
-	test.returnnCol(1, ytest);
-
-	for (int i = 0; i < 15; i++)
-	{
-		cout << ytest[i] << endl;
-	}
-
-	getDifferentVal(ss, ytest);
-	countRows(ss, ytest);
-	for (DecisionTree::value x : ss) {
-		cout << x.val << ": " << x.count << ", ";
-	}
-
-	cout<<entropy(ss, 15);
-
-	ytest.clear();
-	//test namespace utilityfunctions :
-
-	//tree node test : works
-
-	Tree::Node* root = new Tree::Node;
-	//branch 1
-	Tree::Node* x = new Tree::Node;
-	x->colID = 4;
-	x->val = "4";
-	root->add_child(x);
-
-		Tree::Node* x1 = new Tree::Node;
-		x1->colID = 6;
-		x1->val = "5";
-		x->add_child(x1);
-
-		Tree::Node* x2 = new Tree::Node;
-		x2->colID = 6;
-		x2->val = "5";
-		x->add_child(x2);
-
-		Tree::Node* x3 = new Tree::Node;
-		x3->colID = 6;
-		x3->val = "5";
-		x->add_child(x3);
-
-
-	//branch 2
-	Tree::Node* y = new Tree::Node;
-	y->colID = 4;
-	y->val = "5";
-	root->add_child(y);
-
-
-	//branch 3
-	Tree::Node* z = new Tree::Node;
-	z->colID = 4;
-	z->val = "7";
-	root->add_child(z);
-
-		Tree::Node* z1 = new Tree::Node;
-		z1->colID = 7;
-		z1->val = "5";
-		z->add_child(z1);
-
-
-	//branch 4
-	Tree::Node* w = new Tree::Node;
-	w->colID = 4;
-	w->val = "1";
-	root->add_child(w);
-
-
-
-
-	DecisionTree::drawTree(root, -1);*/
